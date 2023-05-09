@@ -1,0 +1,261 @@
+/* comando melhor usar*/
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #f0adb8;
+  color:white;
+  padding: 15px;
+}
+/* menu que mexe*/
+#mmenu{
+  color:white ;
+  text-align: center;
+}
+.menu{
+  background-color: white;
+  display: flex;
+  justify-content:center;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+}
+.menu a {
+  padding: 14px;
+  text-decoration: none;
+  color:#f0adb8;
+  transition:background-color .5s;
+}
+.menu a:hover {
+  background-color: white;
+  color: #97c2dd;
+}
+/* coisa branca de fundo */
+.inicio {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  color:#db75a1;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+  position: relative;
+  padding-bottom: 30px;
+}
+.branco {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  color:#db75a1;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+  position: relative;
+  padding-top: 20px;
+}
+.nome{
+  display: flex;
+  background-color: white;
+  color:#db75a1;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+  position: relative;
+  text-align: left;
+}
+#cont{
+  display: flex;
+  background-color: white;
+  color:#db75a1;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+  position: relative;
+  text-align: left;
+}
+/* muda a cor do link na pagina contatos*/
+a:link{
+  color:#db75a1;
+  text-decoration: none;
+}
+a:visited{
+  color:#db75a1;
+}
+a:hover{
+  color:#97c2dd;
+}
+/* mexe nas figuras do bolo*/
+.bolo img{   
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid  #f0adb8;
+  cursor: pointer;
+}
+.bolo {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bolo p {
+  text-align: center;
+  height: 30px;
+}
+.bolo:hover{
+  box-shadow: 5px 10px 15px #97c2dd;
+}
+/* parte dois */
+.segundo img{   
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid  #f0adb8;
+  cursor: pointer;
+}
+
+.segundo {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.segundo p {
+  text-align: center;
+  height: 30px;
+}
+
+#tipo{
+  text-align: center;
+}
+h1{
+  text-align: center;  
+}
+.saiba{
+  text-align: center; 
+}
+/* parte do sobre nós*/
+.elaine{
+ background-color:white;
+ box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+ display: flex;
+ flex-wrap: wrap;
+}
+.elaine img{
+  width: 200px;
+  height: 200px;
+  display: flex; 
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  border: 5px solid  #97c2dd;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+  user-select:none;
+}
+/* feito o site flex */
+@media screen and (max-width: 820px){ 
+  .inicio{
+    width:100%
+  }
+  .coluna-direita {
+    width:100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:400px){
+  header h1 {
+  font-size: 3rem; 
+  }
+  body {
+    padding: 5px 25px 25px 25px;
+  }
+  .menu, .menu a {
+    display: block;
+    width: 100%;
+  }
+}
+
+  /*pop-up da tela*/
+#entrega{
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  width: 300px;
+  height:100px; 
+}
+
+#entrega img{
+  position: absolute;
+  right: 10px;
+  width: 75px;
+  border-radius: 50%; 
+}
+
+#tel{
+  position: absolute;
+  height: 80px;
+  width: 200px;
+  background-color: #97c2dd;
+  color:white;
+  padding: 8px;
+  margin-top: 10px;
+  left: 16px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity .5s;
+}   
+#tel p{
+  margin: 0;
+}
+
+#entrega img:hover + #tel{
+  opacity: 1;
+}
+
+/* Promoção no topo da tela*/
+
+.coluna-direita{
+  position: relative;
+  top: 100;
+  left: 0;
+  width: 100%;
+  float: left;
+}
+.coluna-esquerda{
+  position: relative;
+  bottom: 100;
+  left: 0;
+  width: 100%;
+  float: left;
+}
+#promocaoBanner1{
+  height: 200px;
+  background-image:url("imagens.html/balas.jpg"); 
+  background-size: 100%; 
+  color:white;
+  text-shadow: 0 0 4px #f0adb8; 
+  position:relative;
+  cursor:pointer;
+  transition: box-shadow .5s;
+}
+#promocaoBanner{
+  height: 200px;
+  background-image:url("imagens.html/brigadeiro.jpg"); 
+  background-size: 50%; 
+  color:white;
+  text-shadow: 0 0 4px #f0adb8; 
+  position:relative;
+  cursor:pointer;
+  transition: box-shadow .5s;
+}
+#promocaoBanner:hover{
+  box-shadow: 10px 10px 16px #c25656;
+}
+#promocaoBanner1:hover{
+  box-shadow: 10px 10px 16px #c65353;
+}
+#promocaoValor{
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
+
+
+
+
